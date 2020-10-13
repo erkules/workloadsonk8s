@@ -1,0 +1,19 @@
+apiVersion: v1
+kind: ResourceQuota
+metadata:
+  name: quota
+spec:
+  hard:
+    requests.memory: 1Gi
+    limits.memory: 2Gi
+  # requests.cpu: 1
+  # requests.ephemeral-storage: 100Mi
+  # limits.cpu: 1
+  # limits.ephemeral-storage: 200Mi
+  # persistentvolumeclaims: 2
+  # default.storageclass.storage.k8s.io/requests.storage: 500Gi
+  # pods: 4
+  # configmaps: 5
+  # services: 2
+  # count/deployments.apps: 2
+---
